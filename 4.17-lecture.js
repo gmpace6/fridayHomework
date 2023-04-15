@@ -2,6 +2,7 @@
 
 
 // Data Type Conversion
+console.log(' ')
 console.log('Data Type Conversion ---------------')
 
 const myVar = 5
@@ -37,6 +38,7 @@ const stringThree = 3 + ''
 console.log(stringThree)
 
 // String Methods
+console.log(' ')
 console.log('String Methods ---------------')
 
 const myString = 'devmountain'
@@ -98,6 +100,7 @@ const joinWithPlus = arrayOfWords.join(' + ')
 console.log(joinWithPlus)
 
 // The What & Why of Functions
+console.log(' ')
 console.log('The What & Why of Functions ---------------')
 
 let hermioneScore = 44
@@ -116,6 +119,7 @@ function calculateScore(studentScore) {
   console.log(harryScore)
 
   // Anatomy of a Function
+  console.log(' ')
   console.log('Anatomy of a Function ---------------')
 
 //   function doSomething() {
@@ -131,6 +135,7 @@ function calculateScore(studentScore) {
 //   }
 
 // Calling a Function
+console.log(' ')
 console.log('Calling a Function ---------------')
 
 function logMyName(name) {
@@ -164,4 +169,63 @@ function calculateTotal(item1, item2) {
   return item1 + item2
 }
 purse -= calculateTotal(6.59, 9.99)   // updates purse to equal 20 - 16.58 (now I'm totally lost???)
+
+// Scope
+console.log(' ')
+console.log('Scope ---------------')
+
+let age = 21
+function logDetails() {
+  let name = 'Tyler'
+  console.log(`My name is ${name} and I am ${age}.`)
+}
+// Why didn't this print?
+
+// let age = 21
+// function logDetails() {
+//   let name = 'Tyler'
+// }
+// console.log(`My name is ${name} and I am ${age}.`)
+
+// Other Function Syntaxes
+console.log(' ')
+console.log('Other Function Syntaxes ---------------')
+
+function giveMeFive() {
+    return 5
+}
+
+const sayHi = function() {
+    return 'Hi!'
+}
+
+const sayBye = () => {
+    return 'Bye!'
+}
+
+// Arrow Functions
+console.log(' ')
+console.log('Arrow Functions ---------------')
+
+const returnParam = item => {
+    return item
+}
+const makeArr = (one, two, three) => {
+    let arr = [one, two, three]
+    return arr
+}                    // what is different???
+
+// const giveMeFive = () => 5
+// const addFive = num => num + 5
+// dont' need 'return' keyword in one-line arrow functions.
+
+const makePriceObj = number => ({price: number}) // wrapping the object’s curly braces in parentheses so that they’re not mistaken for the curly braces that hold function blocks.
+
+const makeLargeObj = (str, num, arr) => (
+    {
+        word: str,
+        integer: num,
+        list: arr
+    }
+)  // You can also wrap implicit returns in parentheses and still have them on a new line.
 
