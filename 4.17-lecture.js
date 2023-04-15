@@ -100,3 +100,50 @@ console.log(joinWithPlus)
 // The What & Why of Functions
 console.log('The What & Why of Functions ---------------')
 
+let hermioneScore = 44
+hermioneScore += 5
+hermioneScore *= 2
+console.log(hermioneScore)
+
+function calculateScore(studentScore) {
+    studentScore += 5
+    studentScore *= 2
+    return studentScore
+  }
+  let hermioneScore2 = calculateScore(44)
+  let harryScore = calculateScore(41)
+  console.log(hermioneScore2)
+  console.log(harryScore)
+
+  // Anatomy of a Function
+  console.log('Anatomy of a Function ---------------')
+
+//   function doSomething() {
+//     ...
+//   }
+
+//   function doSomethingElse(withThis) {
+//     console.log(withThis)
+//   }
+
+//   function doSomethingElse(withThis) {
+//     console.log(withThis)
+//   }
+
+// Calling a Function
+console.log('Calling a Function ---------------')
+
+function logMyName(name) {
+    console.log(name)
+  }
+  
+  logMyName('Cameron')
+  // How does this work, if console.log was above logMyName('Cameron')???
+
+  function sumNumbers(num1, num2) {
+    console.log(num1 + num2)
+  }
+  
+  sumNumbers(3, 9)
+  // Same question???
+
