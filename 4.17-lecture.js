@@ -138,7 +138,7 @@ function logMyName(name) {
   }
   
   logMyName('Cameron')
-  // How does this work, if console.log was above logMyName('Cameron')???
+  // How does this work, if console.log was above logMyName('Cameron') and the code reads top to bottom???
 
   function sumNumbers(num1, num2) {
     console.log(num1 + num2)
@@ -146,4 +146,22 @@ function logMyName(name) {
   
   sumNumbers(3, 9)
   // Same question???
+
+  function sumNumbers(num1, num2) { // removed 151 and then 153 - 155 didn't print, but removed 150-151 and they did???
+    console.log(num1 + num2)
+  }
+  sumNumbers(3, 9)
+  sumNumbers(12, 33)
+  sumNumbers(-15, 15)
+
+  function calculateTotal(item1, item2) {
+    console.log(item1 + item2)
+  }  
+  calculateTotal(6.59, 9.99)
+
+  let purse = 20
+function calculateTotal(item1, item2) {
+  return item1 + item2
+}
+purse -= calculateTotal(6.59, 9.99)   // updates purse to equal 20 - 16.58 (now I'm totally lost???)
 
